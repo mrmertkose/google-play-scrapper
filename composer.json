@@ -1,0 +1,20 @@
+{
+    "name": "mertkose/google-play-scrapper",
+    "description": "a php scrapper for google play",
+    "type": "library",
+    "require": {
+        "imangazaliev/didom": "^1.14"
+    },
+    "autoload":{
+        "psr-4":{
+            "GooglePlay\\":"src"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mert Köse",
+            "email": "mertkose92@gmail.com"
+        }
+    ]
+}
