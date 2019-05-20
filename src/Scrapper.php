@@ -32,7 +32,7 @@ class Scrapper
 
     public function get_image()
     {
-        return $this->document->first("img[class=T75of ujDFqe]")->attr("src");
+        return $this->document->first("img[class=T75of sHb2Xb]")->attr("src");
     }
 
     public function get_content_text()
