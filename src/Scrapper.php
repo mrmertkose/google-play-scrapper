@@ -44,6 +44,16 @@ class Scrapper
     {
         return $this->document->first("div[jsname=sngebd]")->html();
     }
+    
+    public function get_whats_new()
+    {
+		$descdoms = $this->document->find("div[class=DWPxHb]");
+		$whatsnew='';
+		if(count($descdoms)>1) {
+			$whatsnew=$this->document->find("div[class=DWPxHb]")[1]->find("span")[0]->innerHtml();
+		}
+        return $whatsnew;
+    }
 
     public function get_updated()
     {
